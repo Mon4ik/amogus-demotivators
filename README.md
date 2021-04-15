@@ -1,6 +1,12 @@
 # amogus-demotivators
 Создаёт демотиватор с рандомным текстом, как например здесь: <https://www.youtube.com/watch?v=MV8sI3pR-2Y>
 
+# Установка
+Выполняем 2-е команды, чтобы установить
+```
+pip install -r requirements.txt
+pip3 install https://github.com/Infqq/simpledemotivators/archive/main.zip --upgrade
+```
 # Использование
 ## Настройки
 ***
