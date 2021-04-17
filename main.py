@@ -1,4 +1,4 @@
-from simpledemotivators import demcreate
+from simpledemotivators import Demotivator
 from random import randint
 import config
 # debug: print(config.text)
@@ -13,11 +13,11 @@ first = True
 for i in range(1, config.PICS_NUMBER+1):
     print("Making image #{}...".format(i))
     if first:
-        dem = demcreate(config.START_TEXT)
+        dem = Demotivator(config.START_TEXT)
         first = False
     else:
-        dem = demcreate(config.text[i]*randint(4, 8))
-    dem.makeImage('{path}/pic_{i}.jpg'.format(
+        dem = Demotivator(config.text[i]*randint(4, 8))
+    dem.create('{path}/pic_{i}.jpg'.format(
                       path=config.PATH_PICS,
                       i=i-1
                   ),
